@@ -5,10 +5,11 @@
   "files.autoSave": "afterDelay",
   // black
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
   "python.formatting.blackArgs": ["--line-length", "119"],
   // isort
-  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true 
+  },
   // flake8
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": false,
