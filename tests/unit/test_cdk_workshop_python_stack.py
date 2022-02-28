@@ -1,5 +1,6 @@
 import aws_cdk as core
 import aws_cdk.assertions as assertions
+
 from cdk_workshop_python.cdk_workshop_python_stack import CdkWorkshopPythonStack
 
 
@@ -8,9 +9,7 @@ def test_sqs_queue_created():
     stack = CdkWorkshopPythonStack(app, "cdk-workshop-python")
     template = assertions.Template.from_stack(stack)
 
-    template.has_resource_properties("AWS::SQS::Queue", {
-        "VisibilityTimeout": 300
-    })
+    template.has_resource_properties("AWS::SQS::Queue", {"VisibilityTimeout": 300})
 
 
 def test_sns_topic_created():
