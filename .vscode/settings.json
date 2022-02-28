@@ -1,0 +1,23 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Visual Studio Dark",
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  // black
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+  "python.formatting.blackArgs": ["--line-length", "119"],
+  // isort
+  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  // flake8
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.flake8Args": [
+    "--max-line-length",
+    "119",
+    "--ignore=F405,W291,W503"
+  ]
+}
