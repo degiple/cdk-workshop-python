@@ -3,8 +3,8 @@
 # Please adjust to your needs (see https://www.gitpod.io/docs/config-gitpod-file)
 # and commit this file to your remote git repository to share the goodness with others.
 
-image: degiple/gitpod-workspace-awscdk
-#   file: .gitpod.Dockerfile
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
   - init: python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt && python3 -m pip install -r requirements-dev.txt 
